@@ -79,7 +79,22 @@ logo =                                          """
 \033[1;96m███████║██╗██║ ╚═╝ ██║██╗███████╗
 \033[1;91m╚══════╝╚═╝╚═╝     ╚═╝╚═╝╚══════╝
 \x1b
-         
+  
+import os,requests,time,sys
+# ama codey id activea bo id active krdn pewista linky rawakat bhenyt la git hub rawy filekay ka idyakan teda save akayt...
+def ID():
+    idd = str(os.getlogin())
+    id = '-'.join(idd)
+    print("\x1b[37;1mYOUR ID:\x1b[1;91m "+id)
+    if id in requests.get("https://raw.githubusercontent.com/ViratUp/z.py/main/Active%20id").text:
+        print("\033[92m YOUR ID IS ACTIVE .....")
+        time.sleep(1)
+        pass
+    else:
+        print("\033[91m YOUR ID IS NOT ACTIVE")
+        time.sleep(1)
+        sys.exit()
+ID()       
 \x1b[1;97m------------------------\x1b[1;97m------------------------
 \n\x1b[1;92m   ADMIN : \x1b[1;97ssheraz  \x1b[1;95mTOOL:\x1b[1;97mpaid    \x1b[1;91mV:\x1b[1;97m1.5.0
 

@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import os
 try:
-    import requests
+    import os,requests,time,sys
+
 except ImportError:
     print('\n [✓] installing requests !...\n')
     os.system('pip install requests')
